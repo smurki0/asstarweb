@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 
 // ================== DATABASE ==================
-const db = new sqlite3.Database("./store.db");
+const db = new sqlite3.Database("/app/store.db");
 
 // PRODUCTS TABLE
 db.run(`
