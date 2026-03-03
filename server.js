@@ -4,7 +4,9 @@ const cors = require("cors");
 const bcrypt = require("bcryptjs");
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: "https://assttar.netlify.app"
+}));
 app.use(express.json());
 
 // ================== DATABASE ==================
